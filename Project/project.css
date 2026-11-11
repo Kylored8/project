@@ -1,0 +1,29 @@
+body {
+    background-color: #77c4ff;
+}
+#Clouds {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#CloudButton {
+    padding :0px;
+    left : 10px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border: none;
+    bottom: 10px;
+}
+#CloudButtonIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
