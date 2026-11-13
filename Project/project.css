@@ -1,12 +1,29 @@
 body {
     background-color: #77c4ff;
 }
-#Clouds {
-    right: 10px;
-    top: 40px;
-    border-radius: 50%;
-    color:white;
-    z-index: 999;
+#cloud1.hidden {
+       display:none;
+}
+#cloud2.hidden {
+       display:none;
+}
+#cloud1 {
+
+    position: absolute;
+    width: 1000px;
+    height: auto;
+   top: -150px;
+   right: 45%;
+   z-index: 1;
+}
+#cloud2 {
+
+    position: absolute;
+    width: 1000px;
+    height: auto;
+   top: -150px;
+   left: 40%;
+z-index: 0;
 }
 #CloudButton {
     padding :0px;
@@ -17,6 +34,7 @@ body {
     background-color: #4CAF50;
     border: none;
     bottom: 10px;
+    cursor: pointer;
 }
 #CloudButtonIcon {
     padding :0px;
@@ -26,4 +44,7 @@ body {
     border: none;
     bottom:5px;
     left:5px;
+}
+#CloudButton.active {
+    background-color: rgb(150, 43, 43);
 }
