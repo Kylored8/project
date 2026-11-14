@@ -1,6 +1,23 @@
 body {
     background-color: #77c4ff;
 }
+
+.Weather-Panel {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border: 60px solid #333;
+    border-radius: 18px;
+    width: 100%;
+
+}
+
+#Clouds {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
 #cloud1.hidden {
        display:none;
 }
@@ -26,17 +43,324 @@ body {
 z-index: 0;
 }
 #CloudButton {
-    padding :0px;
-    left : 10px;
+    padding: 0px;
+    left: 35px;
+    top: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: #4CAF50;
+    background-color: rgb(255, 255, 255);
     border: none;
     bottom: 10px;
     cursor: pointer;
 }
 #CloudButtonIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+#CloudyNight {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#CloudyNightButton {
+    padding: 0px;
+    left: 150px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(4, 4, 72);
+    border: none;
+    bottom: 10px;
+}
+#CloudyNightIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+#RainyAfternoon {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#HeavyRainButton {
+    padding: 0px;
+    left: 265px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: silver;
+    border: none;
+    bottom: 10px;
+}
+#HeavyRainIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#PartlyCloudy {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#PartlyCloudyButton {
+    padding: 0px;
+    left: 380px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(144, 208, 234);
+    border: none;
+    bottom: 10px;
+}
+#PartlyCloudyIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#Sunny {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#SunnyButton {
+    padding: 0px;
+    left: 490px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(14, 178, 243);
+    border: none;
+    bottom: 10px;
+}
+#SunnyIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#RoughHail {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#RoughHailButton {
+    padding: 0px;
+    left: 600px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(231, 222, 222);
+    border: none;
+    bottom: 10px;
+}
+#RoughHailIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#SnowDay {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#SnowDayButton {
+    padding: 0px;
+    left: 715px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: snow;
+    border: none;
+    bottom: 10px;
+}
+#SnowDayIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#Windy {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#WindyButton {
+    padding: 0px;
+    left: 830px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(98, 207, 250);
+    border: none;
+    bottom: 10px;
+}
+#WindyIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#Foggy {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#FoggyButton {
+    padding: 0px;
+    left: 945px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(216, 230, 244);
+    border: none;
+    bottom: 10px;
+}
+#FoggyIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#ClearNight {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#ClearNightButton {
+    padding: 0px;
+    left: 1060px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: none;
+    bottom: 10px;
+}
+#ClearNightIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#StormyNight {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#StormyNightButton {
+    padding: 0px;
+    left: 1175px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(92, 92, 6);
+    border: none;
+    bottom: 10px;
+}
+#StormyNightIcon {
+    padding :0px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: none;
+    bottom:5px;
+    left:5px;
+}
+
+#StormyDay {
+    right: 10px;
+    top: 40px;
+    border-radius: 50%;
+    color:white;
+    z-index: 999;
+}
+#StormyDayButton {
+    padding: 0px;
+    left: 1290px;
+    top: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(183, 183, 96);
+    border: none;
+    bottom: 10px;
+}
+#StormyDayIcon {
     padding :0px;
     position: absolute;
     width: 90px;
