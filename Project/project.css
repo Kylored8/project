@@ -3,32 +3,55 @@ body {
 }
 
 .Weather-Panel {
-    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     gap: 12px;
     padding: 16px;
-    border: 60px solid #333;
-    border-radius: 18px;
+    box-sizing: border-box;
+    height: 132px;
+    border: 4px solid #333;
+    border-radius: 50px;
     width: 100%;
-
+    overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-#Clouds {
-    right: 10px;
-    top: 40px;
-    border-radius: 50%;
-    color:white;
-    z-index: 999;
+
+#cloud1.hidden {
+       display:none;
+}
+#cloud2.hidden {
+       display:none;
+}
+#cloud1 {
+
+    position: absolute;
+    width: 1000px;
+    height: auto;
+   top: -170px;
+   right: 45%;
+   z-index: 1;
+}
+#cloud2 {
+
+    position: absolute;
+    width: 1000px;
+    height: auto;
+   top: -170px;
+   left: 40%;
+z-index: 0;
 }
 #CloudButton {
     padding: 0px;
     left: 35px;
-    top: 30px;
+    bottom: 10px;
     position: absolute;
     width: 100px;
     height: 100px;
     background-color: rgb(255, 255, 255);
     border: none;
-    bottom: 10px;
+    cursor: pointer;
 }
 #CloudButtonIcon {
     padding :0px;
@@ -41,7 +64,7 @@ body {
 }
 #CloudyNight {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -49,7 +72,7 @@ body {
 #CloudyNightButton {
     padding: 0px;
     left: 150px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -68,7 +91,7 @@ body {
 }
 #RainyAfternoon {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -76,7 +99,7 @@ body {
 #HeavyRainButton {
     padding: 0px;
     left: 265px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -96,7 +119,7 @@ body {
 
 #PartlyCloudy {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -104,7 +127,7 @@ body {
 #PartlyCloudyButton {
     padding: 0px;
     left: 380px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -124,7 +147,7 @@ body {
 
 #Sunny {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -132,7 +155,7 @@ body {
 #SunnyButton {
     padding: 0px;
     left: 490px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -152,7 +175,7 @@ body {
 
 #RoughHail {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -160,7 +183,7 @@ body {
 #RoughHailButton {
     padding: 0px;
     left: 600px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -180,7 +203,7 @@ body {
 
 #SnowDay {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -188,7 +211,7 @@ body {
 #SnowDayButton {
     padding: 0px;
     left: 715px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -208,7 +231,7 @@ body {
 
 #Windy {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -216,7 +239,7 @@ body {
 #WindyButton {
     padding: 0px;
     left: 830px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -236,7 +259,7 @@ body {
 
 #Foggy {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -244,7 +267,7 @@ body {
 #FoggyButton {
     padding: 0px;
     left: 945px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -264,7 +287,7 @@ body {
 
 #ClearNight {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -272,7 +295,7 @@ body {
 #ClearNightButton {
     padding: 0px;
     left: 1060px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -292,7 +315,7 @@ body {
 
 #StormyNight {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -300,7 +323,7 @@ body {
 #StormyNightButton {
     padding: 0px;
     left: 1175px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -320,7 +343,7 @@ body {
 
 #StormyDay {
     right: 10px;
-    top: 40px;
+    bottom: 40px;
     border-radius: 50%;
     color:white;
     z-index: 999;
@@ -328,7 +351,7 @@ body {
 #StormyDayButton {
     padding: 0px;
     left: 1290px;
-    top: 30px;
+    bottom: 30px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -345,3 +368,16 @@ body {
     bottom:5px;
     left:5px;
 }
+#CloudButton.active {
+background-color: rgb(150, 43, 43);
+}
+.ground {
+    position: fixed;
+    bottom: -700px;
+    right: -25%;
+    width: 150%;
+    height: 1000px;
+    background-color: #006912;
+    border-radius: 50%;
+    z-index: -1;
+  }
