@@ -1,6 +1,7 @@
 body {
     background-color: #77c4ff;
 }
+body.night {background-color: #0b0b3b;}
 
 .Weather-Panel {
     position: fixed;
