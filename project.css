@@ -373,6 +373,7 @@ transform: scale(-1, 1);
 #CloudButton.active {
 background-color: rgb(150, 43, 43);
 }
+
 .ground {
     position: fixed;
     bottom: -700px;
@@ -392,7 +393,9 @@ background-color: rgb(150, 43, 43);
     height: 76px;
     z-index: 20;
 }
-
+.ground.cold{
+    background-color:#ffffffe7;
+}
 .tube {
     position: absolute;
     top: 23px;

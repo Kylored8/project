@@ -15,6 +15,7 @@ cloudsVisible = false;
 }
 });
 
+
 const tempSlider = document.getElementById("tempSlider");
 const mercury = document.getElementById("mercury");
 const tempValue = document.getElementById("tempValue");
@@ -27,6 +28,12 @@ function updateThermometer() {
 
   mercury.style.width = `${fillPercent}%`;
   tempValue.textContent = value;
+  console.log(value)
+  if (value < 30) {
+$(".ground").addClass("cold");
+}
+else {$(".ground").removeClass("cold");
+}
 }
 
 tempSlider.addEventListener("input", updateThermometer);
