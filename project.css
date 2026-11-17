@@ -100,7 +100,7 @@ transform: scale(-1, 1);
 }
 #HeavyRainButton {
     padding: 0px;
-    left: 265px;
+    left: 150px;
     bottom: 30px;
     position: absolute;
     width: 100px;
@@ -212,7 +212,7 @@ transform: scale(-1, 1);
 }
 #SnowDayButton {
     padding: 0px;
-    left: 715px;
+ left: 265px;
     bottom: 30px;
     position: absolute;
     width: 100px;
@@ -240,7 +240,7 @@ transform: scale(-1, 1);
 }
 #WindyButton {
     padding: 0px;
-    left: 830px;
+    left: 380px;
     bottom: 30px;
     position: absolute;
     width: 100px;
@@ -268,7 +268,7 @@ transform: scale(-1, 1);
 }
 #FoggyButton {
     padding: 0px;
-    left: 945px;
+    left: 495px;
     bottom: 30px;
     position: absolute;
     width: 100px;
@@ -324,7 +324,7 @@ transform: scale(-1, 1);
 }
 #StormyNightButton {
     padding: 0px;
-    left: 1175px;
+ left: 265px;
     bottom: 30px;
     position: absolute;
     width: 100px;
