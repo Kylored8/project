@@ -21,8 +21,24 @@
     <button id="FoggyButton"><img id="FoggyIcon" src="icons/foggy.png"></img></button>
   
     <button id="StormyNightButton"><img id="StormyNightIcon" src="icons/stormynight.png"></img></button>
-    
+    <div class="thermometer-wrapper">
+      <div class="tube">
+        <div class="mercury-fill" id="mercury"></div>
+      </div>
+      <div class="bulb" id="bulb"></div>
+
+      <input
+        type="range"
+        id="tempSlider"
+        class="thermometer-input"
+        min="0"
+        max="100"
+        value="50"
+        aria-label="Temperature Slider"
+      >
+      <div class="readout"><span id="tempValue">50</span>°F</div>
     </div>
+  </div>
      <img id="cloud1" src="cloud.png">
     <img id="cloud2" src="cloud.png">
     <div class="ground"></div>

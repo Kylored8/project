@@ -14,3 +14,20 @@ cloudsVisible = true;
 cloudsVisible = false;
 }
 });
+
+const tempSlider = document.getElementById("tempSlider");
+const mercury = document.getElementById("mercury");
+const tempValue = document.getElementById("tempValue");
+
+function updateThermometer() {
+  const min = Number(tempSlider.min);
+  const max = Number(tempSlider.max);
+  const value = Number(tempSlider.value);
+  const fillPercent = max > min ? ((value - min) / (max - min)) * 100 : 0;
+
+  mercury.style.width = `${fillPercent}%`;
+  tempValue.textContent = value;
+}
+
+tempSlider.addEventListener("input", updateThermometer);
+updateThermometer();
