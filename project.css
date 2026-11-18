@@ -418,7 +418,7 @@ body.night {
     right: -25%;
     width: 150%;
     height: 1000px;
-    background-color: #368700;
+    background-color: #006912;
     border-radius: 50%;
     z-index: -1;
     animation-name:thawing;
@@ -546,7 +546,8 @@ body.night {
 
 .Season-Selector {
     position: absolute;
-    top: 5%;
+    bottom: 50px;
+    right:500px;
     z-index: 2;
     background-color: #c1d5f6;
     padding: 5px;
