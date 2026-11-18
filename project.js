@@ -32,7 +32,10 @@ function updateThermometer() {
   if (value < 30) {
 $(".ground").addClass("cold");
 }
-else {$(".ground").removeClass("cold");
+  if (80 > value > 30) {$(".ground").removeClass("cold");
+    $(".ground").removeClass("dried");
+  }
+  if (80 < value) {$(".ground").addClass("dried");
 }
 }
 

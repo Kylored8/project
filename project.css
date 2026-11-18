@@ -1,3 +1,8 @@
+:root {
+    --snow-color:#ffffffe7
+}
+
+
 body {
     background-color: #77c4ff;
 }
@@ -383,8 +388,13 @@ background-color: rgb(150, 43, 43);
     background-color: #006912;
     border-radius: 50%;
     z-index: -1;
+    animation-name:thawing;
+    animation-duration: 4s;
   }
-
+@keyframes thawing {
+    0% {background-color:#ffffffe7;}
+    100% { background-color: #006912;}
+}
 .thermometer-wrapper {
     position: fixed;
     right: 24px;
@@ -395,6 +405,13 @@ background-color: rgb(150, 43, 43);
 }
 .ground.cold{
     background-color:#ffffffe7;
+    animation-name: snowing;
+    animation-duration: 4s;
+}
+@keyframes snowing {
+    0% {background-color:#006912;}
+    100% {background-color:#ffffffe7;}
+    
 }
 .tube {
     position: absolute;
