@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>weather app</title>
-    <link rel="stylesheet" href="project.css">
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="project.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="project.js" defer></script>
 </head>
+
 <body>
 
   <div class="Weather-Panel">
 
     <button id="CloudButton"><img id="CloudButtonIcon" src="icons/cloud-icon.png"></img></button>
-  
+
     <button id="HeavyRainButton"><img id="HeavyRainIcon" src="icons/heavyrain.png"></ing></button>
-  
+
     <button id="WindyButton"><img id="WindyIcon" src="icons/windy.png"></img></button>
 
     <button id="FoggyButton"><img id="FoggyIcon" src="icons/foggy.png"></img></button>
-  
+
     <button id="StormyNightButton"><img id="StormyNightIcon" src="icons/stormynight.png"></img></button>
+
     <div class="thermometer-wrapper">
       <div class="tube">
         <div class="mercury-fill" id="mercury"></div>
       </div>
       <div class="bulb" id="bulb"></div>
 
-      <input
-        type="range"
-        id="tempSlider"
-        class="thermometer-input"
-        min="0"
-        max="100"
-        value="50"
-        aria-label="Temperature Slider"
-      >
+      <input type="range" id="tempSlider" class="thermometer-input" min="0" max="100" value="50"
+        aria-label="Temperature Slider">
       <div class="readout"><span id="tempValue">50</span>°F</div>
     </div>
   </div>
-     <img id="cloud1" src="cloud.png">
-    <img id="cloud2" src="cloud.png">
-    <div class="ground"></div>
+  <img id="cloud1" src="cloud.png">
+  <img id="cloud2" src="cloud.png">
+  <div class="ground"></div>
+  <div class="Season-Selector">
+    <label for="seasons"> Season </label>
+    <select name="seasons" id="seasons">
+      <option value="winter">Winter</option>
+      <option value="spring">Spring</option>
+      <option value="summer">Summer</option>
+      <option value="fall">Fall</option>
+  </div>
 </body>
+
 </html>
