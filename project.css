@@ -1,5 +1,5 @@
 :root {
-    --snow-color:#ffffffe7
+    --snow-color: #ffffffe7
 }
 
 
@@ -415,19 +415,37 @@ body.night {
 .ground {
     position: fixed;
     bottom: -700px;
-    right: -25%;
+    right: -50%;
     width: 150%;
     height: 1000px;
     background-color: #006912;
     border-radius: 50%;
     z-index: -1;
-    animation-name:thawing;
+    animation-name: thawing;
     animation-duration: 4s;
-  }
-@keyframes thawing {
-    0% {background-color:#ffffffe7;}
-    100% { background-color: #006912;}
 }
+
+.ground2 {
+    position: fixed;
+    bottom: -750px;
+    left: -50%;
+    width: 150%;
+    height: 1000px;
+    background-color: #006912;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+@keyframes thawing {
+    0% {
+        background-color: #ffffffe7;
+    }
+
+    100% {
+        background-color: #006912;
+    }
+}
+
 .thermometer-wrapper {
     position: fixed;
     right: 24px;
@@ -436,15 +454,22 @@ body.night {
     height: 76px;
     z-index: 20;
 }
-.ground.cold{
-    background-color:#ffffffe7;
+
+.ground.cold {
+    background-color: #ffffffe7;
     animation-name: snowing;
     animation-duration: 4s;
 }
+
 @keyframes snowing {
-    0% {background-color:#006912;}
-    100% {background-color:#ffffffe7;}
-    
+    0% {
+        background-color: #006912;
+    }
+
+    100% {
+        background-color: #ffffffe7;
+    }
+
 }
 
 .tube {
@@ -547,8 +572,19 @@ body.night {
 .Season-Selector {
     position: absolute;
     bottom: 50px;
-    right:500px;
+    right: 500px;
     z-index: 2;
     background-color: #c1d5f6;
     padding: 5px;
+}
+
+#rain.hidden {
+    display: none;
+}
+
+#rain {
+    position: absolute;
+    width: 800px;
+    top: -200px;
+    z-index: 0;
 }
