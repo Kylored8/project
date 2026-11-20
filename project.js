@@ -74,3 +74,4 @@ function updateThermometer() {
 }
 tempSlider.addEventListener("input", updateThermometer);
 updateThermometer();
+
