@@ -413,7 +413,7 @@ body.night {
 }
 
 @keyframes thawing {
-    0% {background-color:#ffffff00;}
+    0% {background-color: var(--animation-start-color, #ffffff00);}
     100% {background-color: #006912;}
 }
 .ground {
@@ -426,9 +426,13 @@ body.night {
     border-radius: 50%;
     z-index: -1;
   }
-  .ground.temperate {
+  .ground2.temperate {
     background-color:#006912;
     animation-name: thawing;
+    animation-duration: 4s;
+}
+  .ground.temperate {
+    background-color:#006912;
     animation-name: thawing;
     animation-duration: 4s;
 }
@@ -446,7 +450,7 @@ body.night {
 
 @keyframes thawing {
     0% {
-        background-color: #ffffffe7;
+        background-color: var(--animation-start-color, #ffffff);
     }
 
     100% {
@@ -464,18 +468,23 @@ body.night {
 }
 
 .ground.cold {
-    background-color: #ffffffe7;
+    background-color: #ffffff;
+    animation-name: snowing;
+    animation-duration: 4s;
+}
+.ground2.cold {
+    background-color: #ffffff;
     animation-name: snowing;
     animation-duration: 4s;
 }
 
 @keyframes snowing {
     0% {
-        background-color: #006912;
+        background-color: var(--animation-start-color, #006912);
     }
 
     100% {
-        background-color: #ffffffe7;
+        background-color: #ffffff;
     }
 
 }

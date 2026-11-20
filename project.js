@@ -43,23 +43,34 @@ function updateThermometer() {
   mercury.style.width = `${fillPercent}%`;
   tempValue.textContent = value;
   console.log(value)
+  document.querySelectorAll(".ground, .ground2").forEach((ground) => {
+    ground.style.setProperty(
+      "--animation-start-color",
+      getComputedStyle(ground).backgroundColor
+    );
+  });
+
   if (value < 30) {
     $(".ground").addClass("cold");
+        $(".ground2").addClass("cold");
   }
   if (80 > value > 30) {
     $(".ground").removeClass("cold");
     $(".ground").removeClass("dried");
+      $(".ground2").removeClass("cold");
+    $(".ground2").removeClass("dried");
   }
   if (80 < value) {
     $(".ground").addClass("dried");
+     $(".ground2").addClass("dried");
   }
-$(".ground").addClass("cold");
-
-}
   if (value > 30) {$(".ground").addClass("temperate");
     $(".ground").removeClass("cold");
-}
+    $(".ground2").addClass("temperate");
+    $(".ground2").removeClass("cold");
 }
 
+
+}
 tempSlider.addEventListener("input", updateThermometer);
 updateThermometer();
