@@ -412,21 +412,24 @@ body.night {
     background-color: rgb(150, 43, 43);
 }
 
+@keyframes thawing {
+    0% {background-color:#ffffff00;}
+    100% {background-color: #006912;}
+}
 .ground {
+    background-color: #006912;
     position: fixed;
     bottom: -700px;
     right: -25%;
     width: 150%;
     height: 1000px;
-    background-color: #006912;
     border-radius: 50%;
     z-index: -1;
-    animation-name:thawing;
-    animation-duration: 4s;
   }
-@keyframes thawing {
-    0% {background-color:#ffffffe7;}
-    100% { background-color: #006912;}
+  .ground.temperate {
+    background-color:#006912;
+    animation-name: thawing;
+    animation-duration: 4s;
 }
 .thermometer-wrapper {
     position: fixed;
