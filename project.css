@@ -522,7 +522,15 @@ background-color: #E4DC8A;
     }
 
 }
+.mercury-fill.cold {
+    background: linear-gradient(90deg, #2789d9, #53e2ff 55%, #1da7c9);
+}
+.bulb.cold {    background: linear-gradient(90deg, #2789d9, #178ea6 55%, #1da7c9);
+}
+.thermometer-input.cold::-webkit-slider-thumb {
+        background: #2789d9;
 
+}
 .mercury-fill {
     position: absolute;
     top: 0;
