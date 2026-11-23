@@ -467,6 +467,40 @@ body.night {
     z-index: 20;
 }
 
+
+.tube {
+    position: absolute;
+    top: 23px;
+    left: 40px;
+    width: 165px;
+    height: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    background: rgba(235, 248, 255, 0.6);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(255, 255, 255, 0.8);
+}
+.ground.dried {
+   background-color: #E4DC8A;
+    animation-name: drying;
+    animation-duration: 4s;
+}
+.ground2.dried {
+background-color: #E4DC8A;
+    animation-name: drying;
+    animation-duration: 4s;
+}
+@keyframes drying {
+    0% {
+        background-color: var(--animation-start-color, #006912);
+    }
+
+    100% {
+        background-color: #E4DC8A;
+    }
+
+}
 .ground.cold {
     background-color: #ffffff;
     animation-name: snowing;
@@ -489,39 +523,6 @@ body.night {
 
 }
 
-.tube {
-    position: absolute;
-    top: 23px;
-    left: 40px;
-    width: 165px;
-    height: 30px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border: 4px solid rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    background: rgba(235, 248, 255, 0.6);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(255, 255, 255, 0.8);
-}
-.ground.dried {
-   background-color: #4d411a;
-    animation-name: drying;
-    animation-duration: 4s;
-}
-.ground2.dried {
-background-color: #4d411a;
-    animation-name: drying;
-    animation-duration: 4s;
-}
-@keyframes drying {
-    0% {
-        background-color: var(--animation-start-color, #006912);
-    }
-
-    100% {
-        background-color: #827036;
-    }
-
-}
 .mercury-fill {
     position: absolute;
     top: 0;
