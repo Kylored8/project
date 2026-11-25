@@ -50,19 +50,19 @@ function updateThermometer() {
     );
   });
 
- if (value < 30) {
-  $(".ground, .ground2")
-    .removeClass("temperate dried")
-    .addClass("cold");
-} else if (value <= 80) {
-  $(".ground, .ground2")
-    .removeClass("cold dried")
-    .addClass("temperate");
-} else {
-  $(".ground, .ground2")
-    .removeClass("cold temperate")
-    .addClass("dried");
-}
+  if (value < 30) {
+    $(".ground, .ground2")
+      .removeClass("temperate dried")
+      .addClass("cold");
+  } else if (value <= 80) {
+    $(".ground, .ground2")
+      .removeClass("cold dried")
+      .addClass("temperate");
+  } else {
+    $(".ground, .ground2")
+      .removeClass("cold temperate")
+      .addClass("dried");
+  }
 
 
 }
