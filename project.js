@@ -52,7 +52,6 @@ function updateThermometer() {
     );
   });
 
-<<<<<<< HEAD
   if (value < 30) {
     $(".ground, .ground2")
       .removeClass("temperate dried")
@@ -69,23 +68,11 @@ function updateThermometer() {
 
 
 }
-=======
- if (value < 30) {
-  $(".ground, .ground2")
-    .removeClass("temperate dried")
-    .addClass("cold");
-} else if (value <= 80) {
-  $(".ground, .ground2")
-    .removeClass("cold dried")
-    .addClass("temperate");
-} else {
-  $(".ground, .ground2")
-    .removeClass("cold temperate")
-    .addClass("dried");
-}
-if (value < 30) {$(".mercury-fill, .bulb, .thermometer-input").addClass("cold")
-}else {$(".mercury-fill, .bulb, .thermometer-input").removeClass("cold")}}
->>>>>>> 4739626c6326c2e4fce613aae138822f0970fa59
 tempSlider.addEventListener("input", updateThermometer);
 updateThermometer();
+
+const ground = document.getElementById("ground");
+const ground2 = document.getElementById("ground2");
+const seasonSelector = document.getElementById("Season-Selector");
+
 
