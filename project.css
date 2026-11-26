@@ -380,7 +380,7 @@ body.night {
 
 #FallingSnowButton {
     padding: 0px;
-    right: 430px;
+    left: 610px;
     bottom: 30px;
     position: absolute;
     width: 100px;
@@ -397,7 +397,7 @@ body.night {
     height: 100px;
     border: none;
     bottom: 5px;
-    left: 5px;
+    left: 0px;
 }
 
 #fallingsnowwrapper img {
