@@ -29,6 +29,20 @@ $("#HeavyRainButton").click(function () {
   }
 });
 
+$("#snow").toggleClass("hidden");
+let snowVisible = false;
+$("#FallingSnowButton").click(function () {
+  if (snowVisible === false) {
+    $("#snow").toggleClass("hidden");
+    $("#FallingSnowButton").toggleClass("active");
+    snowVisible = true;
+  } else {
+    $("#snow").toggleClass("hidden");
+    $("#FallingSnowButton").toggleClass("active");
+    snowVisible = false;
+  }
+});
+
 
 const tempSlider = document.getElementById("tempSlider");
 const mercury = document.getElementById("mercury");
@@ -68,6 +82,24 @@ function updateThermometer() {
 
 
 }
+<<<<<<< HEAD
+=======
+ if (value < 30) {
+  $(".ground, .ground2")
+    .removeClass("temperate dried")
+    .addClass("cold");
+} else if (value <= 80) {
+  $(".ground, .ground2")
+    .removeClass("cold dried")
+    .addClass("temperate");
+} else {
+  $(".ground, .ground2")
+    .removeClass("cold temperate")
+    .addClass("dried");
+}
+if (value < 30) {$(".mercury-fill, .bulb, .thermometer-input").addClass("cold")
+}else {$(".mercury-fill, .bulb, .thermometer-input").removeClass("cold")}
+>>>>>>> b0842ab925c81e71bfdce7cd85c04baf211bf4ef
 tempSlider.addEventListener("input", updateThermometer);
 updateThermometer();
 

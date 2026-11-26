@@ -378,6 +378,33 @@ body.night {
     left: 5px;
 }
 
+#FallingSnowButton {
+    padding: 0px;
+    left: 610px;
+    bottom: 30px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(130, 121, 209);
+    border: none;
+    bottom: 10px;
+}
+
+#FallingSnowIcon {
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: none;
+    bottom: 5px;
+    left: 0px;
+}
+
+#fallingsnowwrapper img {
+    width: 100%;
+    height: 100%;
+}
+
 #StormyDay {
     right: 10px;
     bottom: 40px;
@@ -409,7 +436,7 @@ body.night {
 }
 
 #CloudButton.active {
-    background-color: rgb(150, 43, 43);
+    background-color: rgb(215, 191, 191);
 }
 
 @keyframes thawing {
@@ -639,7 +666,16 @@ body.night {
     z-index: 0;
 }
 
+<<<<<<< HEAD
 .ground.summer,
 .ground2.summer {
     background-color: #E4DC8A;
+=======
+#snow.hidden {
+    display: none;
+}
+
+#snow.active {
+    display: flex;
+>>>>>>> b0842ab925c81e71bfdce7cd85c04baf211bf4ef
 }
