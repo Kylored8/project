@@ -666,16 +666,14 @@ body.night {
     z-index: 0;
 }
 
-<<<<<<< HEAD
 .ground.summer,
 .ground2.summer {
     background-color: #E4DC8A;
-=======
+}
 #snow.hidden {
     display: none;
 }
 
 #snow.active {
     display: flex;
->>>>>>> b0842ab925c81e71bfdce7cd85c04baf211bf4ef
 }
